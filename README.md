@@ -1,3 +1,6 @@
+[![Gem Version](https://badge.fury.io/rb/parse_log_drain.svg)](http://badge.fury.io/rb/parse_log_drain)
+[![Dependency Status](https://gemnasium.com/jasonhutchens/parse_log_drain.png)](https://gemnasium.com/jasonhutchens/parse_log_drain)
+
 Parse Log Drain
 ===============
 
