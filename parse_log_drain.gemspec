@@ -14,8 +14,24 @@ Gem::Specification.new do |s|
   s.date = "2015-05-26"
   s.description = "Never loose a log again."
   s.email = "jasonhutchens@gmail.com"
+  s.executables = ["parse_log_drain"]
   s.extra_rdoc_files = [
     "README.md"
+  ]
+  s.files = [
+    ".ruby-gemset",
+    ".ruby-version",
+    "Gemfile",
+    "Gemfile.lock",
+    "README.md",
+    "Rakefile",
+    "UNLICENSE",
+    "VERSION",
+    "bin/parse_log_drain",
+    "lib/parse_log_drain.rb",
+    "lib/parse_log_drain/drain.rb",
+    "lib/parse_log_drain/main.rb",
+    "parse_log_drain.gemspec"
   ]
   s.homepage = "http://github.com/JasonHutchens/parse_log_drain"
   s.licenses = ["UNLICENSE"]
