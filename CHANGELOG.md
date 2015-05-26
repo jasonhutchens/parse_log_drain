@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.1.0](https://github.com/jasonhutchens/parse_log_drain/tree/0.1.0) (2015-05-26)
+
+[Full Changelog](https://github.com/jasonhutchens/parse_log_drain/compare/0.0.1...0.1.0)
+
 ## [0.0.1](https://github.com/jasonhutchens/parse_log_drain/tree/0.0.1) (2015-05-26)
 
 [Full Changelog](https://github.com/jasonhutchens/parse_log_drain/compare/0.0.0...0.0.1)
