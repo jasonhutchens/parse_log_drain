@@ -9,5 +9,5 @@ group :development do
   gem 'rdoc', '~> 4.1'
   gem 'jeweler', '~> 2.0'
   gem 'byebug', '~> 5.0'
-  gem 'github_changelog_generator', '~> 1.4'
+  gem 'github_changelog_generator', '~> 1.5'
 end
