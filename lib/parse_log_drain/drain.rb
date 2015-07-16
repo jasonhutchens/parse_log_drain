@@ -15,7 +15,7 @@ threads =
       log = File.join(log_dir, filename)
       loop do
         File.open(log, "a+") { |file| file.write("*** STARTING PARSE LOG DRAIN FOR '#{app}' ***\n") }
-        `cd #{ARGV.first}; parse log --follow=true --level="INFO" "#{app}" >> #{log} 2>&1`
+        `cd #{ARGV.first}; parse logs --follow=true --level="INFO" "#{app}" >> #{log} 2>&1`
         File.open(log, "a+") { |file| file.write("*** EXITED WITH STATUS #{$?.exitstatus} ***\n") }
         sleep 30
       end
