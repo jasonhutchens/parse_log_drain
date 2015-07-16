@@ -1,12 +1,13 @@
 require 'fileutils'
+require 'json'
 
-results = `cd #{ARGV.first}; parse list`
-exit unless $?.exitstatus == 0
+parse_config = File.join(ARGV.first, 'config', 'global.json')
+blob = File.read(parse_config)
+apps = JSON.parse(blob)["applications"].keys - ["_default"]
 
 log_dir = File.join(ARGV.first, "logs")
 FileUtils.mkdir_p(log_dir)
 
-apps = results.gsub(/^\*/, " ").split("\n").slice(1..-1).map(&:strip)
 threads =
   apps.map do |app|
     Thread.new do
